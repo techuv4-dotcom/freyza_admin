@@ -1,0 +1,54 @@
+.ProseMirror {
+  min-height: 250px;
+  outline: none;
+}
+
+.ProseMirror p {
+  margin: 10px 0;
+}
+
+.ProseMirror h1 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+.ProseMirror h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.ProseMirror h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.ProseMirror ul {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+.ProseMirror ol {
+  list-style: decimal;
+  padding-left: 25px;
+}
+
+.ProseMirror blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 16px;
+  color: #6b7280;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #9ca3af;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
